@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnallbooks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304"
+        tools:srcCompat="@mipmap/photo" />
+
+    <Button
+        android:id="@+id/btnallbooks"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Show all books"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/txtlib" />
+
+    <Button
+        android:id="@+id/btnallready"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already Read Book"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btncurrent"
+        app:layout_constraintStart_toStartOf="@+id/btncurrent"
+        app:layout_constraintTop_toBottomOf="@+id/btncurrent" />
+
+    <Button
+        android:id="@+id/btnwishlist"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Your Wishlist"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnallready"
+        app:layout_constraintStart_toStartOf="@+id/btnallready"
+        app:layout_constraintTop_toBottomOf="@+id/btnallready" />
+
+    <Button
+        android:id="@+id/btnabt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="About"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@+id/btnfav"
+        app:layout_constraintStart_toStartOf="@+id/btnfav"
+        app:layout_constraintTop_toBottomOf="@+id/btnfav" />
+
+    <Button
+        android:id="@+id/btncurrent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Current Reading Book"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnallbooks"
+        app:layout_constraintStart_toStartOf="@+id/btnallbooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnallbooks" />
+
+    <Button
+        android:id="@+id/btnfav"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Your Favourite List"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnwishlist"
+        app:layout_constraintStart_toStartOf="@+id/btnwishlist"
+        app:layout_constraintTop_toBottomOf="@+id/btnwishlist" />
+
+    <TextView
+        android:id="@+id/txtlib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="monospace"
+        android:text="My Library"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtdharshu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="cursive"
+        android:text="Developed by Dharshu"
+        android:textColor="@color/purple_500"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="7dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgRL">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:id="@+id/img1"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bookname1"
+                android:text="Book Name"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_below="@+id/img1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:id="@+id/downtbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/arrowdown" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expandtxtRL"
+            android:layout_below="@+id/imgRL"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/author"
+                android:text="Author:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dharshu"
+                android:id="@+id/txtauthor"
+                android:layout_below="@id/author"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short Description"
+                android:id="@+id/shortdesc"
+                android:layout_below="@id/txtauthor"
+                android:layout_marginTop="8dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrowup"
+                android:layout_below="@id/shortdesc"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/upbtn"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_below="@+id/shortdesc"
+                android:textColor="@color/red"
+                android:layout_toStartOf="@+id/upbtn"
+                android:layout_marginEnd="5dp"
+                android:visibility="gone"
+                android:id="@+id/txtdel"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
